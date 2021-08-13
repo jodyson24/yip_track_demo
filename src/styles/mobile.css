@@ -71,3 +71,52 @@
       text-decoration: dotted !important;
   }
 }
+
+
+@media (max-width: 780px) {
+    .Header {
+      border-bottom: 1px solid #ccc;
+    }
+    nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .Header .logo h5 {
+      font-size: 16px;
+      margin-top: 6px;
+    }
+    .menu {
+      display: none;
+    }
+    .col-85 {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .hide-icon {
+      display: block;
+    }
+  
+    /* ============ Mobile-nav ================= */
+    .mobile-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 2px 2px 8px #0008;
+    }
+    .mobile-menu li {
+      margin-bottom: 15px !important;
+    }
+    .mobile-menu li a{
+        font-size: 13px;
+        color: #010;
+    }
+    .mobile-menu li a:hover{
+        color: #8b7cdb;
+        text-decoration: dotted !important;
+    }
+  }
+  
