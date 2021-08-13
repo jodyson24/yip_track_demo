@@ -97,7 +97,8 @@
   margin-bottom: 20px;
 }
 .page_t_bottom .col-85 form {
-  max-width: 50%;
+  width: 50%;
+  max-width: 80%;
   margin: 10px auto;
 }
 .page_t_bottom .col-85 form .f-in label {
@@ -137,8 +138,8 @@
   background: #fcfbfe;
   border-radius: 10px;
 }
-.res_box_info h6{
-    font-size: 12px;
+.res_box_info h6 {
+  font-size: 12px;
 }
 .mapouter {
   position: relative;
@@ -152,10 +153,10 @@
   height: calc(520px - 210px);
   width: 100%;
 }
-.gmap_canvas iframe{
-    height: 100%;
-    width: 100%;
+.gmap_canvas iframe {
+  height: 100%;
+  width: 100%;
 }
-.res_box_footer a{
-    font-size: 12px;
+.res_box_footer a {
+  font-size: 12px;
 }

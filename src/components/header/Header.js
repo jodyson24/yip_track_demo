@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
+import Mobile from './Mobile';
 
 export default function Header() {
+    const [show, setShow] = useState(false)
     return (
         <>
             <div className="Header">
@@ -14,19 +17,32 @@ export default function Header() {
 
                     <div className="menu">
                         <ul className="d-flex">
-                            <li>Home</li>
-                            <li>Services</li>
-                            <li>About us</li>
-                            <li>Our team</li>
-                            <li>Contact us</li>
-                            <li>Developers</li>
+                            <li><Link to="/">Home</Link></li>
+                            <li> <Link>Services</Link> </li>
+                            <li><Link>About us</Link></li>
+                            <li><Link>Our team</Link></li>
+                            <li><Link>Contact us</Link></li>
+                            <li><Link>Developers</Link></li>
                         </ul>
-                    </div> 
+                    </div>
 
                     <div>
-                        <input className="form-control" />
+                        <input className="search-bar"
+                            placeholder="Search our website"
+                        />
+                    </div>
+
+                    <div className="hide-icon"
+                        onClick={e => setShow(!show)}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#8b7cdb" class="bi bi-layout-text-sidebar" viewBox="0 0 16 16">
+                            <path d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9V1z" />
+                        </svg>
                     </div>
                 </nav>
+
+                {show && <Mobile show={show} setShow={setShow} />}
             </div>
         </>
     );

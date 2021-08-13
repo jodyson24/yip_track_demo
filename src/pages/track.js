@@ -17,7 +17,7 @@ export default function Track() {
                     <div className="col-85 py-3">
                         <h6>Enter your smartphone details</h6>
 
-                        <form className="border rounded-sm p-5">
+                        <div className="border rounded-sm p-4">
                             <div className="mb-2 f-in">
                                 <label htmlFor="brand">Smartphone Brand Name</label>
                                 <input type="text" className="form-control" id="brand" />
@@ -39,13 +39,13 @@ export default function Track() {
                             </div>
 
                             <div className="mb-2 mt-4 f-in">
-                                
-                            </div>
-                        </form>
-
-                        <button className="track-btn"
-                                onClick={e => setModal(!modal)}
+                                <button className="track-btn"
+                                    onClick={e => setModal(!modal)}
                                 >Track smartphone</button>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
