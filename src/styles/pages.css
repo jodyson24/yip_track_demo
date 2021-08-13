@@ -1,0 +1,75 @@
+/* ======== Home Page ============= */
+.home_page {
+  width: 100%;
+}
+.fit {
+  width: 80%;
+  margin: 0 auto;
+}
+.banner {
+  background: white;
+  min-height: fit-content;
+  height: fit-content;
+  max-height: fit-content;
+}
+.banner_text {
+  max-width: 70%;
+  text-align: center;
+  margin: 50px auto;
+}
+.banner_text h6 {
+  font-size: 53px;
+  font-weight: 600;
+  color: rgb(48, 45, 45);
+}
+.banner-btn {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.banner-btn1,
+.banner-btn2 {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+.banner-btn1 {
+  background: #8b7cdb;
+  color: #fff;
+}
+.banner-sm0 {
+  background-image: url('../img//mael-balland-wcBFtctph_M-unsplash.jpg');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: #e5b101; */
+}
+.info-box {
+  background: #fcfbfe;
+}
+.design img {
+  width: 65%;
+}
+.info-h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.brand-h5 {
+  text-align: center;
+  font-weight: 400;
+  font: 20px;
+  margin-bottom: 25px;
+}
+.services-h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.services p {
+  font-size: 13px;
+}
+.card-title{
+    font-size: 15px;
+}
