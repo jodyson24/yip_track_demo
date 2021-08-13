@@ -13,6 +13,7 @@
   max-height: fit-content;
 }
 .banner_text {
+  min-width: 100%;
   max-width: 70%;
   text-align: center;
   margin: 50px auto;
@@ -70,6 +71,91 @@
 .services p {
   font-size: 13px;
 }
-.card-title{
-    font-size: 15px;
+.card-title {
+  font-size: 15px;
+}
+
+/* =================== Tracking Page =-================ */
+.page_t_top {
+  background: #fcfbfe;
+  height: 110px;
+  width: 100%;
+}
+.page_t_top .col-85 h6 {
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.page_t_bottom {
+  min-height: 450px;
+  width: 100%;
+}
+.page_t_bottom .col-85 h6 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.page_t_bottom .col-85 form {
+  max-width: 50%;
+  margin: 10px auto;
+}
+.page_t_bottom .col-85 form .f-in label {
+  font-size: 13px;
+}
+.page_t_bottom .col-85 form .f-in input:hover {
+  border: 1px solid #8b7cdb;
+}
+.track-btn {
+  padding: 8px 18px;
+  background: #8b7cdb;
+  color: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 25px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.track-btn:hover {
+  background: #fff;
+  color: #8b7cdb;
+}
+
+/* =============-========== Result Modal ============ */
+.result_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #0007;
+  z-index: 8;
+}
+.result_box {
+  width: 50%;
+  margin: 95px auto;
+  height: 520px;
+  background: #fcfbfe;
+  border-radius: 10px;
+}
+.res_box_info h6{
+    font-size: 12px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: calc(520px - 210px);
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: calc(520px - 210px);
+  width: 100%;
+}
+.gmap_canvas iframe{
+    height: 100%;
+    width: 100%;
+}
+.res_box_footer a{
+    font-size: 12px;
 }

@@ -13,6 +13,7 @@ import img9 from '../img/Vivo-logo.jpg'
 import img10 from '../img/Xiaomi-logo.jpg'
 
 import iDesign from '../img/example-13.svg'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -27,7 +28,7 @@ export default function Home() {
                                 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                             </p>
                             <div className="banner-btn d-flex mb-2">
-                                <button className="banner-btn1 mr-2 my-2"> Track your smartphone </button>
+                                <button className="banner-btn1 mr-2 my-2"> <Link className="text-white" to="/track">Track your smartphone</Link> </button>
                                 <button className="banner-btn2 mr-2 my-2"> About us </button>
                             </div>
                         </div>
@@ -87,7 +88,7 @@ export default function Home() {
                         <div className="service-list">
                             <div className="row">
                                 <div className="col-lg-4">
-                                    <div className="card text-left">
+                                    <div className="card text-left my-3">
                                         <img className="card-img-top" src={bimg} alt="" />
                                         <div className="card-body">
                                             <h4 className="card-title">Smartphone Tracking</h4>
@@ -101,7 +102,7 @@ export default function Home() {
                                 </div>
 
                                 <div className="col-lg-4">
-                                    <div className="card text-left">
+                                    <div className="card text-left my-3">
                                         <img className="card-img-top" src={bimg} alt="" />
                                         <div className="card-body">
                                             <h4 className="card-title">Remote Equipment Tracking</h4>
@@ -115,7 +116,7 @@ export default function Home() {
                                 </div>
 
                                 <div className="col-lg-4">
-                                    <div className="card text-left">
+                                    <div className="card text-left my-3">
                                         <img className="card-img-top" src={bimg} alt="" />
                                         <div className="card-body">
                                             <h4 className="card-title">Military Tracking</h4>

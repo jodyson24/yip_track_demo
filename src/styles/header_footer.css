@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 100vw;
     background: #fff;
-    z-index: 9;
+    z-index: 4;
     box-shadow: 2px 1px 8px #0006;
 }
 nav{
@@ -26,18 +26,48 @@ nav{
     margin-right: 10px;
     margin-top: 5px;
     color: #3d3d4e;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    color: #8b7cdb;
 }
 
 /* ========= Footer =========== */
 .Footer{
     width: 100%;
     max-width: 100vw;
-    background: #fafafb;
+    background: #fcfbfe;
+    text-align: center;
     /* position: absolute;
     bottom: 0;
     left: 0; */
 }
-.Footer h6{
+.logo h5{
+    color: #8b7cdb;
+}
+.f-motto, .social-H{
+    font-size: 12px;
+    /* margin-bottom: 10px; */
+    color: #8b7cdb;
+}
+.social-H{
+    font-size: 14px;
+    /* margin-bottom: 10px; */
+    color: #8b7cdb;
+}
+.Footer .footer-nav ul li h6{
+    font-weight: 500;
+    font-size: 14px;
+    color: #8b7cdb;
+}
+.Footer .footer-nav ul li{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #8b7cdb;
+}
+.Footer .copyright{
     text-align: center;
-    color: #3d3d4e;
+    color: #8b7cdb;
+    font-size: 13px;
+    font-weight: 500;
 }
